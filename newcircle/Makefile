@@ -7,4 +7,7 @@ all: clean
 
 clean:
 	rm -rf newcircle *.css *.zip
-	
+
+install: all
+	cdk --install-theme=newcircle.zip
+
