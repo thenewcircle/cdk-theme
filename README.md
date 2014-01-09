@@ -16,3 +16,18 @@ python virtualenv.
 If this is your first time installing the newcircle theme, set it as the default theme as well.    
     
     (vcdk) $ sudo cdk --default-theme=newcircle
+
+
+### Dependencies
+This project uses lessc to reduce the size of css files. 
+
+#### Install on Ubuntu
+    sudo apt-get install lessc
+
+#### Install on MacOS
+The easiest way is to use a package manager such as HomeBrew
+
+    $ brew install npm
+    $ npm install --global less
+
+Make sure that the /usr/local/bin/ directory is in your PATH, or equivalent, before running the make install command. 
