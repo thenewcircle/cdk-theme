@@ -1,13 +1,19 @@
-all: clean
+install: newcircle.zip
+	cdk --install-theme=newcircle.zip
+
+newcircle.css: newcircle.less
 	lessc newcircle.less > newcircle.css
 
-clean:
-	rm -rf newcircle *.css *.zip
-
-install: all
+newcircle.zip: newcircle.css
 	rm -rf newcircle
 	mkdir newcircle
-	mv *.css newcircle
+	cp *.css newcircle
 	zip newcircle.zip newcircle/*
-	cdk --install-theme=newcircle.zip
+	rm -rf newcircle
+
+clean:
+	rm -rf newcircle *.zip
+
+purge:
+	rm -rf newcircle *.css *.zip
 
