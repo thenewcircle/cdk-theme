@@ -1,5 +1,6 @@
 install: newcircle.zip
 	cdk --install-theme=newcircle.zip
+	cdk --default-theme=newcircle
 
 newcircle.css: newcircle.less
 	lessc newcircle.less > newcircle.css
