@@ -5,7 +5,8 @@ NewCircle's theme for use with twitter's courseware development kit (CDK). The c
 
 ### Install NewCircle CDK Theme Without NodeJS Less (lessc) 
 Use these instructions If you do not need to make updates to theme's CSS file.
-	cd ~
+	
+    $ cd ~
     $ git clone https://github.com/thenewcircle/cdk-theme.git
     $ cd cdk-theme/newcircle
     $ source ~/vcdk/bin/activate       
