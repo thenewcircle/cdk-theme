@@ -10,7 +10,7 @@ Use these instructions If you do not need to make updates to theme's CSS file.
     $ git clone https://github.com/thenewcircle/cdk-theme.git
     $ cd cdk-theme/newcircle
     $ source ~/vcdk/bin/activate       
-	(vcdk) $ cdk install theme=newcircle.zip
+    (vcdk) $ cdk install theme=newcircle.zip
     (vcdk) $ cdk --default-theme=newcircle
 
 
@@ -20,7 +20,7 @@ If you need to modify the theme, install lessc before regenerating the theme by 
     $ git clone https://github.com/thenewcircle/cdk-theme.git
     $ cd cdk-theme/newcircle
     $ source ~/vcdk/bin/activate
-    (vcdk) $ make install
+    (vcdk) $ make purge install
 
 If this is your first time installing the newcircle theme, set it as the default theme as well.    
     
